@@ -75,7 +75,6 @@
   "image1": {
     "container": "container1",
     "subcontainer": "0400e",
-    "row": 0,
     "col": 3,
     "height": 0.6,
     "width": 6,
