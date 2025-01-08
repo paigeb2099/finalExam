@@ -20,17 +20,6 @@
     sticky={null}
     type="main"
   >
-    <Button id="button2" text="New Order">
-      <Event
-        event="click"
-        method="show"
-        params={{ ordered: [] }}
-        pluginId="modalFrame1"
-        type="widget"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </Button>
     <TextInput
       id="textInput1"
       iconBefore="bold/interface-search"
@@ -53,6 +42,17 @@
       <Option id="037fd" value="Option 2" />
       <Option id="adeb2" value="Option 3" />
     </Select>
+    <Button id="button2" text="New Order">
+      <Event
+        event="click"
+        method="show"
+        params={{ ordered: [] }}
+        pluginId="modalFrame1"
+        type="widget"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
     <Table
       id="table1"
       cellSelection="none"
