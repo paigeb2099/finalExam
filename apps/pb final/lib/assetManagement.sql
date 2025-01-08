@@ -1,0 +1,1 @@
+SELECT * FROM hulunet_asset_management_pb
