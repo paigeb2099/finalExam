@@ -1,0 +1,343 @@
+{
+  "EmailInput": {
+    "container": "LoginForm",
+    "row": 1.8,
+    "height": 0.2,
+    "width": 12
+  },
+  "ErrorAlert": {
+    "container": "LoginForm",
+    "row": 5.6,
+    "height": 1,
+    "width": 12
+  },
+  "FormTitle": {
+    "container": "LoginForm",
+    "height": 0.6,
+    "width": 12
+  },
+  "FormTitle2": {
+    "container": "LoginForm2",
+    "height": 1,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "FormTitle3": {
+    "container": "container1",
+    "subcontainer": "75736",
+    "row": 6.6,
+    "col": 2,
+    "height": 1,
+    "width": 8,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "LoginForm": {
+    "container": "container1",
+    "subcontainer": "52b62",
+    "row": 0.4,
+    "col": 1,
+    "height": 0.8,
+    "width": 10,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "LoginForm2": {
+    "container": "container1",
+    "subcontainer": "d5999",
+    "row": 0.4,
+    "col": 1,
+    "height": 1.2,
+    "width": 10,
+    "stackPosition": {
+      "object": {
+        "ordinal": 4,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "LoginWithGoogleButton": {
+    "container": "LoginForm",
+    "row": 4.6,
+    "height": 1,
+    "width": 12
+  },
+  "PasswordInput": {
+    "container": "LoginForm",
+    "row": 2.6,
+    "height": 0.2,
+    "width": 12
+  },
+  "SignupEmail": {
+    "container": "LoginForm2",
+    "row": 2.8,
+    "height": 0.6,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "container1": {
+    "subcontainer": "splitPaneFrame1",
+    "row": 3.4,
+    "col": 1,
+    "height": 0.2,
+    "width": 10,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "containerTitle1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "divider1": {
+    "container": "LoginForm",
+    "row": 4.4,
+    "height": 0.2,
+    "width": 12
+  },
+  "forgotPasswordButton": {
+    "container": "LoginForm",
+    "row": 2.8,
+    "col": 7,
+    "height": 0.6,
+    "width": 5
+  },
+  "formButton1": {
+    "container": "LoginForm",
+    "row": 3.4,
+    "height": 1,
+    "width": 12
+  },
+  "formButton2": {
+    "container": "LoginForm2",
+    "row": 3,
+    "height": 1,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "group1": {
+    "container": "LoginForm",
+    "row": 6.6,
+    "height": 3.8,
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "group2": {
+    "container": "LoginForm2",
+    "row": 5.6,
+    "col": 2,
+    "height": 4.2,
+    "width": 10,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "image1": {
+    "row": 4.6,
+    "height": 8.8,
+    "width": 12
+  },
+  "image2": {
+    "container": "container1",
+    "subcontainer": "75736",
+    "row": 1.4,
+    "col": 2,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 3,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "link1": {
+    "type": "stack",
+    "container": "group1",
+    "subcontainer": "52b62",
+    "row": 0,
+    "col": 8,
+    "height": 0.6,
+    "width": 4,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 88,
+        "height": 24
+      }
+    }
+  },
+  "link2": {
+    "type": "stack",
+    "container": "group2",
+    "subcontainer": "52b62",
+    "row": 0.4,
+    "col": 9,
+    "height": 1,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 55.75,
+        "height": 24
+      }
+    }
+  },
+  "text10": {
+    "container": "container1",
+    "subcontainer": "75736",
+    "row": 7.2,
+    "col": 2,
+    "height": 0.6,
+    "width": 10,
+    "stackPosition": {
+      "object": {
+        "ordinal": 1,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "text11": {
+    "subcontainer": "splitPaneFrame1",
+    "row": 17.4,
+    "col": 6,
+    "height": 0.6,
+    "width": 6
+  },
+  "text2": {
+    "container": "LoginForm",
+    "row": 0.6,
+    "height": 1.2,
+    "width": 12
+  },
+  "text3": {
+    "container": "LoginForm",
+    "row": 1.2,
+    "height": 0.6,
+    "width": 4
+  },
+  "text4": {
+    "container": "LoginForm",
+    "row": 2,
+    "height": 0.6,
+    "width": 5
+  },
+  "text5": {
+    "type": "stack",
+    "container": "group1",
+    "subcontainer": "52b62",
+    "row": 0,
+    "height": 0.6,
+    "width": 7,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 230,
+        "height": 24
+      }
+    }
+  },
+  "text6": {
+    "container": "LoginForm2",
+    "row": 1.2,
+    "height": 1.6,
+    "width": 11,
+    "stackPosition": {
+      "object": {
+        "ordinal": 4,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "text7": {
+    "container": "LoginForm2",
+    "row": 2,
+    "height": 1,
+    "width": 5,
+    "stackPosition": {
+      "object": {
+        "ordinal": 4,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "text9": {
+    "type": "stack",
+    "container": "group2",
+    "subcontainer": "52b62",
+    "row": 0.4,
+    "height": 1,
+    "width": 9,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 176.25,
+        "height": 24
+      }
+    }
+  }
+}
