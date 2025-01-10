@@ -1,4 +1,4 @@
-id: query2
+id: newAssetApproved
 type: datasource
 subtype: OpenAPIQuery
 resourceName: 3838b9a0-4493-4fae-853a-d3115180e5ee
@@ -90,10 +90,10 @@ template:
     - notificationDuration: ''
 createdAt: 2025-01-10T02:21:17.782Z
 blockData:
-  top: 416
-  left: 2320
+  top: 448
+  left: 2560
   uuid: 0d7b43a6-9ad9-4536-a322-a71c285f6684
-  pluginId: query2
+  pluginId: newAssetApproved
   blockType: default
   editorType: OpenAPIQuery
   resourceName: 3838b9a0-4493-4fae-853a-d3115180e5ee

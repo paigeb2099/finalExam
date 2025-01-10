@@ -79,8 +79,8 @@ template:
     - notificationDuration: ''
 createdAt: 2025-01-10T01:06:57.825Z
 blockData:
-  top: 416
-  left: 1856
+  top: 448
+  left: 1952
   uuid: 31c44c97-8d6f-49ce-82f4-0ee1997ecdb0
   options:
     taskType: userTask
