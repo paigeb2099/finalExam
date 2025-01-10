@@ -88,8 +88,7 @@
         style={{
           ordered: [
             { border: "{{ theme.primary}}" },
-
-            { label: "rgba(1, 1, 1, 0.9)" },
+            { label: "{{ theme.primary }}" },
           ],
         }}
         styleVariant="outline"
@@ -130,13 +129,6 @@
         style={{ ordered: [{ background: "rgba(255, 255, 255, 0)" }] }}
       >
         <View id="52b62" viewKey="View 1">
-
-          <Text
-            id="text5"
-            horizontalAlign="right"
-            value="New here?"
-            verticalAlign="center"
-          />
           <Link id="link1" showUnderline="never" text="Sign up">
             <Event
               event="click"
@@ -148,14 +140,12 @@
               waitType="debounce"
             />
           </Link>
-
           <Text
             id="text5"
             horizontalAlign="right"
             value="New here?"
             verticalAlign="center"
           />
-
         </View>
       </Container>
       <Event

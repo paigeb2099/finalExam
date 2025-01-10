@@ -3,8 +3,7 @@
   "version": "43.0.9",
   "pageUuid": "1539495c-cec9-11ef-a0ea-83726fc8b4cc",
   "appTemplate": {
- paige/devtest
-    "appThemeId": 131487,
+    "appThemeId": 121711,
     "pageCodeFolders": {
       "object": {
         "defaultPage": {
@@ -13,11 +12,9 @@
       }
     },
     "rootScreen": "defaultPage",
-paige/devtest
-    "appThemeName": "hulunet",
+    "appThemeName": "Fintech Theme",
     "shortlink": "login",
-    "version": "3.135.0",
-
+    "version": "3.131.0",
     "experimentalDataTabEnabled": true
   }
 }
