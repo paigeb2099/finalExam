@@ -6,9 +6,6 @@
   title="Default Page"
   urlSlug=""
 >
-  <connectResource id="query5" _componentId="select2" />
-  <connectResource id="query6" _componentId="select3" />
-  <connectResource id="query7" _componentId="select4" />
   <Include src="./modalFrame1.rsx" />
   <Include src="./modalFrame2.rsx" />
   <Frame
@@ -20,17 +17,6 @@
     sticky={null}
     type="main"
   >
-    <Button id="button2" text="New Order">
-      <Event
-        event="click"
-        method="show"
-        params={{ ordered: [] }}
-        pluginId="modalFrame1"
-        type="widget"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </Button>
     <TextInput
       id="textInput1"
       iconBefore="bold/interface-search"
@@ -53,6 +39,17 @@
       <Option id="037fd" value="Option 2" />
       <Option id="adeb2" value="Option 3" />
     </Select>
+    <Button id="button2" text="New Order">
+      <Event
+        event="click"
+        method="show"
+        params={{ ordered: [] }}
+        pluginId="modalFrame1"
+        type="widget"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
     <Table
       id="table1"
       cellSelection="none"
@@ -61,7 +58,6 @@
       defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
       emptyMessage="No rows found"
       enableSaveActions={true}
-      primaryKeyColumnId="b9a7d"
       rowHeight="small"
       searchTerm="{{ textInput1.value }}"
       showBorder={true}
@@ -72,14 +68,14 @@
       <Column
         id="b9a7d"
         alignment="right"
-        editable={false}
+        editable="false"
         editableOptions={{ showStepper: true }}
         format="decimal"
         formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
         hidden="true"
-        key="asset_id"
-        label="Asset ID"
+        key="id"
+        label="ID"
         placeholder="Enter value"
         position="center"
         size={100}
@@ -90,7 +86,7 @@
         alignment="left"
         format="string"
         groupAggregationMode="none"
-        key="asset_name"
+        key="name"
         label="Name"
         placeholder="Enter value"
         position="center"
@@ -100,12 +96,12 @@
       <Column
         id="c4104"
         alignment="left"
-        format="string"
+        format="tag"
         formatOptions={{ automaticColors: true }}
         groupAggregationMode="none"
-        key="asset_type"
+        key="type"
         label="Type"
-        placeholder="Enter value"
+        placeholder="Select option"
         position="center"
         size={134}
         summaryAggregationMode="none"
@@ -143,16 +139,10 @@
         id="db8a6"
         alignment="right"
         editableOptions={{ showStepper: true }}
-        format="currency"
-        formatOptions={{
-          currency: "USD",
-          currencySign: "standard",
-          notation: "standard",
-          showSeparators: true,
-          currencyDisplay: "symbol",
-        }}
+        format="decimal"
+        formatOptions={{ showSeparators: true, notation: "standard" }}
         groupAggregationMode="sum"
-        key="money"
+        key="spend"
         label="Cost"
         placeholder="Enter value"
         position="center"
@@ -177,7 +167,7 @@
         format="link"
         formatOptions={{ showUnderline: "hover", underlineStyle: "solid" }}
         groupAggregationMode="none"
-        key="Media"
+        key="media"
         label="Media"
         placeholder="Enter value"
         position="center"

@@ -8,7 +8,7 @@
   "button1": {
     "container": "container1",
     "subcontainer": "0400e",
-    "row": 8.6,
+    "row": 8.4,
     "col": 7,
     "height": 1,
     "width": 5,
@@ -75,7 +75,6 @@
   "image1": {
     "container": "container1",
     "subcontainer": "0400e",
-    "row": 0,
     "col": 3,
     "height": 0.6,
     "width": 6,
@@ -264,7 +263,7 @@
   "text5": {
     "container": "container1",
     "subcontainer": "0400e",
-    "row": 8,
+    "row": 7.8,
     "col": 2,
     "height": 0.6,
     "width": 8,
