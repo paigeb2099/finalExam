@@ -191,7 +191,6 @@
     "col": 1,
     "height": 8.8,
     "width": 10
-
   },
   "image2": {
     "container": "container1",
@@ -212,8 +211,6 @@
     "type": "stack",
     "container": "group1",
     "subcontainer": "52b62",
-
-
     "col": 8,
     "height": 0.6,
     "width": 4,
@@ -287,7 +284,6 @@
     "type": "stack",
     "container": "group1",
     "subcontainer": "52b62",
-
     "height": 0.6,
     "width": 7,
     "stackPosition": {
