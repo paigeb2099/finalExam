@@ -1,0 +1,111 @@
+id: branch1
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - allowedGroupIds: []
+    - streamResponse: false
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: |
+        if (orders.data[0].order_type === 'From existing asset') {
+          executePathAtMostOnce('0')
+        }
+        else if (orders.data[0].order_type === 'New') {
+          executePathAtMostOnce('1')
+        }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - queryRunOnSelectorUpdate: false
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - editorMode: sql
+    - queryRunTime: null
+    - changesetObject: ''
+    - offlineOptimisticResponse: null
+    - errorTransformer: return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - isHidden: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: return data
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2025-01-09T05:35:09.526Z
+blockData:
+  top: -16
+  left: 928
+  uuid: e1873c3a-e722-4b4c-8ef4-b4280a8b4d52
+  options:
+    conditions:
+      - id: 1edee24c-a2c1-4304-9994-1c32baa2c871
+        type: if
+        statement: orders.data[0].order_type === 'From existing asset'
+        outgoingPortId: 1a28d272-86da-4a4d-b489-ac73976268cc
+      - id: 03d99d76-96d9-47f6-844c-cef8a55f7f16
+        type: if
+        statement: orders.data[0].order_type === 'New'
+        outgoingPortId: bc02260c-1f55-473c-bb30-c4b66c5c5a14
+  pluginId: branch1
+  blockType: conditional
+  editorType: JavascriptQuery
+  onboarding: false
+  isMinimized: false
+  resourceName: JavascriptQuery
+  incomingPorts: []
+  outgoingPorts:
+    - id: 1a28d272-86da-4a4d-b489-ac73976268cc
+      name: '0'
+      type: conditional
+    - id: bc02260c-1f55-473c-bb30-c4b66c5c5a14
+      name: '1'
+      type: conditional
+  incomingOnSuccessEdges:
+    - 35138e3a-8077-49a4-aac4-84a242aad8f6

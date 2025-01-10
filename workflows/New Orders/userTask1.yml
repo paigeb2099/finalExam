@@ -1,0 +1,115 @@
+id: userTask1
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - allowedGroupIds: []
+    - streamResponse: false
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - showFailureToaster: true
+    - query: |-
+        return {
+            assignees: ,
+            expiryTimeout: ,
+            inputsTemplateString: newAsset.data[0].name
+          }
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - queryRunOnSelectorUpdate: false
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - editorMode: sql
+    - queryRunTime: null
+    - changesetObject: ''
+    - offlineOptimisticResponse: null
+    - errorTransformer: return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - isHidden: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: return data
+    - events: []
+    - queryTimeout: '120000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2025-01-10T01:06:57.825Z
+blockData:
+  top: 416
+  left: 1856
+  uuid: 31c44c97-8d6f-49ce-82f4-0ee1997ecdb0
+  options:
+    taskType: userTask
+    appConfig:
+      uuid: 613d5ac0-ceef-11ef-a109-371011e29f6c
+    assignees:
+      - id: 1491468
+        type: user
+    groupAssignments: []
+    adminUserAssignments: []
+    inputsTemplateString: newAsset.data[0].name
+    adminGroupAssignments:
+      - 3963705
+    groupAssignmentNames: []
+    assigneesWithTextIdentifiers:
+      - type: user
+        email: paige@retool.com
+    adminGroupAssignmentNames:
+      - admin
+    adminUserAssignmentEmails: []
+  pluginId: userTask1
+  blockType: asyncTask
+  editorType: JavascriptQuery
+  isMinimized: false
+  resourceName: JavascriptQuery
+  incomingPorts: []
+  outgoingPorts:
+    - id: bb31788a-85bf-4d6d-a0dc-e4e68a58fa65
+      name: waitNotification-31c44c97-8d6f-49ce-82f4-0ee1997ecdb0
+      type: waitNotification
+  incomingOnSuccessEdges:
+    - 86d00b4b-2b15-45b5-8fc0-16564dc85c8e
