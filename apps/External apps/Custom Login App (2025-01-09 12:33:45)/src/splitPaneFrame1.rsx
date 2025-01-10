@@ -13,7 +13,9 @@
   <Text
     id="text11"
     horizontalAlign="right"
-    value="© Company, Inc. ‎ ‎ ‎ [Terms]() ‎ ‎ ‎  [Privacy ]()"
+ paige/devtest
+    value="© HuluNet+, Inc. ‎ ‎ ‎ [Terms]() ‎ ‎ ‎  [Privacy ]()"
+
     verticalAlign="center"
   />
 </SplitPaneFrame>
