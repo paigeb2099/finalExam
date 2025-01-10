@@ -1,1 +1,1 @@
-SELECT * FROM hulunet_assets ORDER BY ID ASC
+SELECT * FROM hulunet_asset_management_pb

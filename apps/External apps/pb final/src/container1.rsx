@@ -8,21 +8,6 @@
   showHeader={true}
 >
   <Header>
-    <Button
-      id="button3"
-      iconBefore="bold/interface-arrows-left-circle-2"
-      text="Back"
-    >
-      <Event
-        event="click"
-        method="showPreviousView"
-        params={{ ordered: [] }}
-        pluginId="container2"
-        type="widget"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </Button>
     <Text
       id="containerTitle1"
       horizontalAlign="center"
@@ -34,22 +19,22 @@
     <Image
       id="image1"
       hidden="{{ 
-  (table1.selectedRow.type === 'Trailer' || 
-    table1.selectedRow.type === 'Video Clip')
+  (table1.selectedRow.asset_type === 'Trailer' || 
+    table1.selectedRow.asset_type === 'Clip')
 }}
 "
       horizontalAlign="center"
-      src="{{ table1.selectedRow.media }}"
+      src="{{ table1.selectedRow.Media }}"
     />
     <Video
       id="video1"
       hidden="{{ 
-  (table1.selectedRow.type === 'Social Media Post' || 
-    table1.selectedRow.type === 'Art' || table1.selectedRow.type === 'Billboard') 
+  (table1.selectedRow.asset_type === 'Social Media Post' || 
+    table1.selectedRow.asset_type === 'Art') 
 }}
 "
       playbackRate={1}
-      src="{{ table1.selectedSourceRow.media }}"
+      src="{{ table1.selectedSourceRow.Media }}"
       volume={1}
     />
     <Text
@@ -61,13 +46,13 @@
     <Text
       id="text4"
       horizontalAlign="center"
-      value="**Asset Type:** {{ table1.selectedRow.type }}"
+      value="**Asset Type:** {{ table1.selectedRow.asset_type }}"
       verticalAlign="center"
     />
     <Text
       id="text6"
       horizontalAlign="center"
-      value="**Cost:** ${{ table1.selectedRow.spend }}"
+      value="**Cost:** ${{ table1.selectedRow.money }}"
       verticalAlign="center"
     />
     <Text
