@@ -3,7 +3,8 @@
   "version": "43.0.9",
   "pageUuid": "f85bed58-cd51-11ef-9344-e32e565b3932",
   "appTemplate": {
-    "appThemeId": -1,
+    "appThemeId": 131487,
+    "appThemeModeId": "cd15600e",
     "pageCodeFolders": {
       "object": {
         "defaultPage": {
@@ -15,7 +16,8 @@
       }
     },
     "rootScreen": "defaultPage",
-    "version": "3.133.0",
+    "appThemeName": "hulunet",
+    "version": "3.135.0",
     "experimentalDataTabEnabled": true
   }
 }

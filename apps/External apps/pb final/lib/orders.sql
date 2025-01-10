@@ -1,1 +1,1 @@
-SELECT * FROM hulunet_orders_pb
+SELECT * FROM hulunet_orders
