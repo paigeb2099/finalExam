@@ -31,6 +31,7 @@
     />
     <Option
       id="19347"
+      hidden={'current_user.groups.some(group => group.name === "admin")'}
       icon="bold/money-graph-bar-increase"
       iconPosition="left"
       itemType="page"
