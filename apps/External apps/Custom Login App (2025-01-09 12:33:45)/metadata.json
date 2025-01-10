@@ -3,6 +3,7 @@
   "version": "43.0.9",
   "pageUuid": "1539495c-cec9-11ef-a0ea-83726fc8b4cc",
   "appTemplate": {
+ paige/devtest
     "appThemeId": 131487,
     "pageCodeFolders": {
       "object": {
@@ -12,9 +13,11 @@
       }
     },
     "rootScreen": "defaultPage",
+paige/devtest
     "appThemeName": "hulunet",
     "shortlink": "login",
     "version": "3.135.0",
+
     "experimentalDataTabEnabled": true
   }
 }

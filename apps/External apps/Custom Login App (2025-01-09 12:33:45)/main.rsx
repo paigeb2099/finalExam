@@ -1,5 +1,6 @@
 <App>
   <Include src="./src/defaultPage.rsx" />
+ paige/devtest
   <CustomAppTheme
     id="$appTheme"
     _migrated={true}
@@ -38,4 +39,5 @@
     textLight="#ffffff"
     warning="#cd6f00"
   />
+ main
 </App>

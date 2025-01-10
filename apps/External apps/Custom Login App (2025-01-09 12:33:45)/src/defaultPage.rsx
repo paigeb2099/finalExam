@@ -68,7 +68,9 @@ return data"
     isHiddenOnMobile={false}
     padding="0"
     sticky={null}
+paige/devtest
     style={{ ordered: [{ canvas: "rgba(0, 0, 0, 1)" }] }}
+
     type="main"
   >
     <Image
@@ -76,7 +78,9 @@ return data"
       fit="contain"
       heightType="fixed"
       horizontalAlign="center"
+
       retoolStorageFileId="b1f053bb-9fd5-4600-9fec-2288219e8f09"
+
       src="https://picsum.photos/id/1025/800/600"
       srcType="retoolStorageFileId"
     />
