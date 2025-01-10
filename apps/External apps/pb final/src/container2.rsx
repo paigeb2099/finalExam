@@ -21,7 +21,7 @@
     </Button>
     <Text
       id="containerTitle2"
-      value="#### Hulunet Assets"
+      value="#### HuluNet+ Assets"
       verticalAlign="center"
     />
   </Header>
@@ -44,9 +44,7 @@
       placeholder="Filter"
       showSelectionIndicator={true}
     >
-      <Option id="75244" value="Option 1" />
-      <Option id="037fd" value="Option 2" />
-      <Option id="adeb2" value="Option 3" />
+      <Option id="278a7" disabled={false} hidden={false} value="By Type" />
     </Select>
     <Table
       id="table1"
@@ -57,11 +55,17 @@
       defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
       emptyMessage="No rows found"
       enableSaveActions={true}
+      groupByColumns={{}}
+      limitOffsetRowCount="1100000"
+      linkedFilterId=""
+      overflowType="pagination"
       rowHeight="small"
       searchTerm="{{ textInput1.value }}"
+      serverPaginated={true}
       showBorder={true}
       showFooter={true}
       showHeader={true}
+      templatePageSize="100"
       toolbarPosition="bottom"
     >
       <Column
@@ -78,7 +82,6 @@
         placeholder="Enter value"
         position="center"
         size={100}
-        summaryAggregationMode="none"
       />
       <Column
         id="f46d6"
@@ -90,7 +93,6 @@
         placeholder="Enter value"
         position="center"
         size={239}
-        summaryAggregationMode="none"
       />
       <Column
         id="c4104"
@@ -103,7 +105,6 @@
         placeholder="Enter value"
         position="center"
         size={134}
-        summaryAggregationMode="none"
         valueOverride="{{ _.startCase(item) }}"
       />
       <Column
@@ -117,7 +118,6 @@
         placeholder="Enter value"
         position="center"
         size={100}
-        summaryAggregationMode="none"
         valueOverride="{{ _.startCase(item) }}"
       />
       <Column
@@ -131,7 +131,6 @@
         placeholder="Enter value"
         position="center"
         size={130}
-        summaryAggregationMode="none"
         valueOverride="{{ _.startCase(item) }}"
       />
       <Column
@@ -152,7 +151,6 @@
         placeholder="Enter value"
         position="center"
         size={93.34375}
-        summaryAggregationMode="none"
       />
       <Column
         id="93aba"
@@ -164,7 +162,6 @@
         placeholder="Enter value"
         position="center"
         size={487.34375}
-        summaryAggregationMode="none"
       />
       <Column
         id="91750"
@@ -177,7 +174,6 @@
         placeholder="Enter value"
         position="center"
         size={100}
-        summaryAggregationMode="none"
       />
       <Action
         id="f384e"

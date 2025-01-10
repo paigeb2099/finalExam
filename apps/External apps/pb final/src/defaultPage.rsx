@@ -32,7 +32,7 @@
       event="success"
       method="trigger"
       params={{ ordered: [] }}
-      pluginId=""
+      pluginId="query12"
       type="datasource"
       waitMs="0"
       waitType="debounce"
@@ -83,6 +83,15 @@
       waitMs="0"
       waitType="debounce"
     />
+    <Event
+      event="success"
+      method="trigger"
+      params={{ ordered: [] }}
+      pluginId="query12"
+      type="datasource"
+      waitMs="0"
+      waitType="debounce"
+    />
   </SqlQueryUnified>
   <SqlQueryUnified
     id="addNewAsset"
@@ -111,6 +120,47 @@
     />
   </SqlQueryUnified>
   <connectResource id="query11" _componentId="select1" />
+  <WorkflowRun
+    id="query12"
+    notificationDuration={4.5}
+    resourceName="WorkflowRun"
+    showSuccessToaster={false}
+    workflowId="1e0e7f31-3290-4b72-aa84-eb18da00dee5"
+  />
+  <SqlQueryUnified
+    id="query13"
+    query={include("../lib/query13.sql", "string")}
+    resourceDisplayName="retool_db"
+    resourceName="b164e4a6-c5ab-49d6-b483-84ba9dcd7f3e"
+    warningCodes={[]}
+  />
+  <RetoolAIQuery
+    id="query14"
+    notificationDuration={4.5}
+    resourceDisplayName="retool_ai"
+    resourceName="retool_ai"
+    showSuccessToaster={false}
+  />
+  <RetoolAIQuery
+    id="chat1_query1"
+    action="chatResponseGeneration"
+    chatHistory="{{ chat1.messageHistory }}"
+    chatInput="{{ chat1.lastMessage }}"
+    defaultModelInitialized={true}
+    resourceDisplayName="retool_ai"
+    resourceName="retool_ai"
+    vectorModeEnabled={true}
+    vectorNamespaceIds={["001849d9-8b81-4ef0-9fc6-75565384eef3"]}
+    vectorNamespaceIdsFilters={[
+      {
+        ordered: [
+          { namespaceId: "001849d9-8b81-4ef0-9fc6-75565384eef3" },
+          { filters: [] },
+        ],
+      },
+    ]}
+  />
+  <Include src="./drawerFrame1.rsx" />
   <Include src="./modalFrame1.rsx" />
   <Include src="./modalFrame2.rsx" />
   <Frame
@@ -123,5 +173,21 @@
     type="main"
   >
     <Include src="./container2.rsx" />
+    <Button
+      id="button4"
+      horizontalAlign="right"
+      iconBefore="bold/computer-robot"
+      text="Help"
+    >
+      <Event
+        event="click"
+        method="show"
+        params={{ ordered: [] }}
+        pluginId="drawerFrame1"
+        type="widget"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
   </Frame>
 </Screen>

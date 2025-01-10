@@ -31,16 +31,6 @@
     />
   </Header>
   <View id="0400e" viewKey="View 1">
-    <Image
-      id="image1"
-      hidden="{{ 
-  (table1.selectedRow.type === 'Trailer' || 
-    table1.selectedRow.type === 'Video Clip')
-}}
-"
-      horizontalAlign="center"
-      src="{{ table1.selectedRow.media }}"
-    />
     <Video
       id="video1"
       hidden="{{ 
@@ -55,40 +45,80 @@
     <Text
       id="text1"
       horizontalAlign="center"
-      value="**{{ table1.selectedRow.asset_name}}**"
-      verticalAlign="center"
-    />
-    <Text
-      id="text4"
-      horizontalAlign="center"
-      value="**Asset Type:** {{ table1.selectedRow.type }}"
+      style={{
+        ordered: [
+          { fontSize: "h3Font" },
+          { fontWeight: "h3Font" },
+          { fontFamily: "h3Font" },
+        ],
+      }}
+      value="**{{ table1.selectedRow.name}}**"
       verticalAlign="center"
     />
     <Text
       id="text6"
       horizontalAlign="center"
-      value="**Cost:** ${{ table1.selectedRow.spend }}"
+      style={{
+        ordered: [
+          { fontSize: "h6Font" },
+          { fontWeight: "h6Font" },
+          { fontFamily: "h6Font" },
+        ],
+      }}
+      value="Cost: *${{ table1.selectedRow.spend }}*"
+      verticalAlign="center"
+    />
+    <Text
+      id="text4"
+      horizontalAlign="center"
+      style={{
+        ordered: [
+          { fontSize: "h6Font" },
+          { fontWeight: "h6Font" },
+          { fontFamily: "h6Font" },
+        ],
+      }}
+      value="Asset Type: {{ table1.selectedRow.type }}"
       verticalAlign="center"
     />
     <Text
       id="text2"
-      horizontalAlign="right"
-      value="**Language:** {{ table1.selectedRow.language }}"
+      horizontalAlign="center"
+      style={{
+        ordered: [
+          { fontSize: "h6Font" },
+          { fontWeight: "h6Font" },
+          { fontFamily: "h6Font" },
+        ],
+      }}
+      value="Language: {{ table1.selectedRow.language }}"
       verticalAlign="center"
     />
     <Text
       id="text3"
-      horizontalAlign="right"
-      value="**Country:** {{ table1.selectedRow.country }}"
-      verticalAlign="center"
-    />
-    <Text
-      id="text5"
       horizontalAlign="center"
-      value="*{{ table1.selectedRow.description }}*"
+      style={{
+        ordered: [
+          { fontSize: "h6Font" },
+          { fontWeight: "h6Font" },
+          { fontFamily: "h6Font" },
+        ],
+      }}
+      value="Country: {{ table1.selectedRow.country }}"
       verticalAlign="center"
     />
-    <Button id="button1" horizontalAlign="right" text="Order Asset">
+    <Button
+      id="button1"
+      heightType="auto"
+      style={{
+        ordered: [
+          { fontSize: "labelFont" },
+          { fontWeight: "labelFont" },
+          { fontFamily: "labelFont" },
+        ],
+      }}
+      text="Order Asset"
+    >
       <Event
         event="click"
         method="show"
@@ -99,5 +129,30 @@
         waitType="debounce"
       />
     </Button>
+    <Image
+      id="image1"
+      fit="contain"
+      heightType="fixed"
+      hidden="{{ 
+  (table1.selectedRow.type === 'Trailer' || 
+    table1.selectedRow.type === 'Video Clip')
+}}
+"
+      horizontalAlign="center"
+      src="{{ table1.selectedRow.media }}"
+    />
+    <Text
+      id="text5"
+      horizontalAlign="center"
+      style={{
+        ordered: [
+          { fontSize: "h6Font" },
+          { fontWeight: "h6Font" },
+          { fontFamily: "h6Font" },
+        ],
+      }}
+      value="*{{ table1.selectedRow.description }}*"
+      verticalAlign="center"
+    />
   </View>
 </Container>

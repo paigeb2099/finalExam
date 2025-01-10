@@ -3,15 +3,22 @@
     "container": "tabbedContainer1",
     "subcontainer": "9bc40",
     "height": 9,
-    "width": 12
+    "width": 12,
+    "stackPosition": {
+      "object": {
+        "ordinal": 0,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
   },
   "button1": {
     "container": "container1",
     "subcontainer": "0400e",
-    "row": 10.8,
+    "row": 6.4,
     "col": 8,
-    "height": 1,
-    "width": 4,
+    "height": 0.8,
     "stackPosition": {
       "object": {
         "ordinal": 7,
@@ -44,6 +51,17 @@
     "subcontainer": "0400e",
     "height": 1,
     "width": 1
+  },
+  "button4": {
+    "row": 0.2,
+    "col": 11,
+    "height": 1,
+    "width": 1
+  },
+  "chat1": {
+    "subcontainer": "drawerFrame1",
+    "height": 15.2,
+    "width": 12
   },
   "container1": {
     "container": "container2",
@@ -100,6 +118,18 @@
     "height": 0.2,
     "width": 4
   },
+  "drawerCloseButton1": {
+    "rowGroup": "header",
+    "subcontainer": "drawerFrame1",
+    "col": 9,
+    "height": 1
+  },
+  "drawerTitle1": {
+    "rowGroup": "header",
+    "subcontainer": "drawerFrame1",
+    "height": 0.6,
+    "width": 9
+  },
   "form1": {
     "subcontainer": "modalFrame1",
     "height": 1,
@@ -115,7 +145,7 @@
   },
   "form2": {
     "subcontainer": "modalFrame2",
-    "width": 11,
+    "width": 12,
     "stackPosition": {
       "object": {
         "ordinal": 0,
@@ -154,9 +184,9 @@
   "image1": {
     "container": "container1",
     "subcontainer": "0400e",
-    "col": 3,
-    "height": 0.6,
-    "width": 6,
+    "row": 11.6,
+    "height": 11.8,
+    "width": 7,
     "stackPosition": {
       "object": {
         "ordinal": 0,
@@ -166,6 +196,11 @@
       }
     }
   },
+  "image2": {
+    "subcontainer": "header",
+    "height": 1.2,
+    "width": 1
+  },
   "lineChart1": {
     "container": "tabbedContainer1",
     "subcontainer": "b2256",
@@ -173,7 +208,7 @@
     "width": 12,
     "stackPosition": {
       "object": {
-        "ordinal": 0,
+        "ordinal": 1,
         "widthType": "fixed",
         "width": 0,
         "height": 0
@@ -206,14 +241,25 @@
   },
   "navigation1": {
     "subcontainer": "header",
+    "row": 0.2,
+    "col": 1,
     "height": 1,
-    "width": 12
+    "width": 9
   },
   "pieChart1": {
     "container": "tabbedContainer1",
     "subcontainer": "47fec",
-    "height": 7.4,
-    "width": 11
+    "col": 4,
+    "height": 11.2,
+    "width": 5,
+    "stackPosition": {
+      "object": {
+        "ordinal": 2,
+        "widthType": "fixed",
+        "width": 0,
+        "height": 0
+      }
+    }
   },
   "select1": {
     "container": "container2",
@@ -235,24 +281,24 @@
     "container": "form1",
     "row": 0.2,
     "height": 0.2,
-    "width": 4
+    "width": 6
   },
   "select3": {
     "container": "form1",
     "row": 0.6,
     "height": 0.2,
-    "width": 4
+    "width": 6
   },
   "select4": {
     "container": "form1",
     "row": 0.4,
     "height": 0.2,
-    "width": 4
+    "width": 6
   },
   "tabbedContainer1": {
     "row": 0.4,
-    "height": 0.2,
-    "width": 10,
+    "height": 12.2,
+    "width": 12,
     "stackPosition": {
       "object": {
         "ordinal": 0,
@@ -286,10 +332,10 @@
   "text1": {
     "container": "container1",
     "subcontainer": "0400e",
-    "row": 5.4,
-    "col": 3,
+    "row": 1,
+    "col": 7,
     "height": 0.6,
-    "width": 6,
+    "width": 5,
     "stackPosition": {
       "object": {
         "ordinal": 6,
@@ -322,10 +368,10 @@
   "text2": {
     "container": "container1",
     "subcontainer": "0400e",
-    "row": 6.6,
-    "col": 5,
+    "row": 4.2,
+    "col": 7,
     "height": 0.6,
-    "width": 6,
+    "width": 5,
     "stackPosition": {
       "object": {
         "ordinal": 5,
@@ -338,10 +384,10 @@
   "text3": {
     "container": "container1",
     "subcontainer": "0400e",
-    "row": 7.2,
-    "col": 5,
+    "row": 5.2,
+    "col": 7,
     "height": 0.6,
-    "width": 6,
+    "width": 5,
     "stackPosition": {
       "object": {
         "ordinal": 4,
@@ -354,10 +400,10 @@
   "text4": {
     "container": "container1",
     "subcontainer": "0400e",
-    "row": 6,
-    "col": 3,
+    "row": 3.2,
+    "col": 7,
     "height": 0.6,
-    "width": 6,
+    "width": 5,
     "stackPosition": {
       "object": {
         "ordinal": 3,
@@ -370,10 +416,10 @@
   "text5": {
     "container": "container1",
     "subcontainer": "0400e",
-    "row": 7.8,
-    "col": 2,
+    "row": 23.6,
+    "col": 1,
     "height": 0.6,
-    "width": 8,
+    "width": 5,
     "stackPosition": {
       "object": {
         "ordinal": 2,
@@ -386,9 +432,10 @@
   "text6": {
     "container": "container1",
     "subcontainer": "0400e",
-    "row": 6.6,
+    "row": 1.6,
+    "col": 7,
     "height": 0.6,
-    "width": 4,
+    "width": 5,
     "stackPosition": {
       "object": {
         "ordinal": 1,
@@ -439,13 +486,13 @@
   "textInput3": {
     "container": "form1",
     "height": 0.2,
-    "width": 4
+    "width": 6
   },
   "textInput4": {
     "container": "form1",
     "row": 0.8,
     "height": 0.2,
-    "width": 4
+    "width": 6
   },
   "textInput5": {
     "container": "form1",
@@ -464,10 +511,9 @@
   "video1": {
     "container": "container1",
     "subcontainer": "0400e",
-    "row": 0.6,
-    "col": 2,
-    "height": 4.8,
-    "width": 8,
+    "row": 0.2,
+    "height": 11.4,
+    "width": 7,
     "stackPosition": {
       "object": {
         "ordinal": 8,
