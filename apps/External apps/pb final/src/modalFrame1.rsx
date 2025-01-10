@@ -7,13 +7,12 @@
   isHiddenOnMobile={true}
   overlayInteraction={true}
   padding="8px 12px"
-  showFooter={true}
   showHeader={true}
   showOverlay={true}
-  size="medium"
+  size="large"
 >
   <Header>
-    <Text id="modalTitle1" value="### Container title" verticalAlign="center" />
+    <Text id="modalTitle1" value="### Order New Asset" verticalAlign="center" />
     <Button
       id="modalCloseButton1"
       ariaLabel="Close"
@@ -50,89 +49,84 @@
         <Text id="formTitle1" value="#### Form title" verticalAlign="center" />
       </Header>
       <Body>
+        <TextInput
+          id="textInput5"
+          label="Reason for Order:"
+          labelPosition="top"
+          placeholder="Marketing, project materials, etc."
+          required={true}
+        />
+        <TextInput
+          id="textInput3"
+          label="Asset Name:"
+          labelPosition="top"
+          placeholder="Enter New Asset Name"
+          required={true}
+        />
         <Select
           id="select2"
           data="{{ assetManagement.data }}"
           emptyMessage="No options"
-          formDataKey="asset_name"
-          label="Title"
+          label="Asset Type:"
           labelPosition="top"
-          labels="{{ item.asset_name }}"
+          labels="{{ item.type }}"
           overlayMaxHeight={375}
           placeholder="Select an option"
           required={true}
           showSelectionIndicator={true}
-          values="{{ item.asset_id }}"
+          value=""
+          values="{{ item.type }}"
+        />
+        <Select
+          id="select4"
+          data="{{ assetManagement.data }}"
+          emptyMessage="No options"
+          label="Country:"
+          labelPosition="top"
+          labels="{{ item.country}}"
+          overlayMaxHeight={375}
+          placeholder="Select an option"
+          required={true}
+          showSelectionIndicator={true}
+          values="{{ item.country }}"
         />
         <Select
           id="select3"
-          captionByIndex=""
-          colorByIndex=""
-          data=""
-          disabledByIndex=""
+          data="{{ assetManagement.data }}"
           emptyMessage="No options"
-          fallbackTextByIndex=""
-          formDataKey="asset_type"
-          hiddenByIndex=""
-          iconByIndex=""
-          imageByIndex=""
-          itemMode="static"
-          label="Type"
-          labelPosition="top"
-          labels=""
-          overlayMaxHeight={375}
-          placeholder="Select an option"
-          required={true}
-          showSelectionIndicator={true}
-          tooltipByIndex=""
-          values=""
-        >
-          <Option id="074fd" disabled={false} hidden={false} value="Clip" />
-          <Option id="92113" disabled={false} hidden={false} value="Art" />
-          <Option id="727e7" disabled={false} hidden={false} value="Trailer" />
-          <Option
-            id="05709"
-            disabled={false}
-            hidden={false}
-            value="Social Media Post"
-          />
-        </Select>
-        <Select
-          id="select4"
-          emptyMessage="No options"
-          formDataKey="language"
-          itemMode="static"
           label="Language"
           labelPosition="top"
-          labels={null}
+          labels="{{ item.language }}"
           overlayMaxHeight={375}
           placeholder="Select an option"
           required={true}
           showSelectionIndicator={true}
-          values={null}
-        >
-          <Option id="09264" value="Option 1" />
-          <Option id="766ba" value="Option 2" />
-          <Option id="2715e" value="Option 3" />
-        </Select>
-        <Select
-          id="select5"
-          emptyMessage="No options"
-          formDataKey="country"
-          itemMode="static"
-          label="Country"
+          values="{{ item.language }}"
+        />
+        <TextInput
+          id="textInput4"
+          label="Description of Asset"
           labelPosition="top"
-          labels={null}
-          overlayMaxHeight={375}
-          placeholder="Select an option"
+          placeholder="Describe New Asset"
           required={true}
-          showSelectionIndicator={true}
-          values={null}
-        >
-          <Option id="931b6" value="Option 1" />
-          <Option id="f0a55" value="Option 2" />
-          <Option id="843c3" value="Option 3" />
-        </Select>
+        />
+        <DateTime
+          id="dateTime2"
+          dateFormat="MMM d, yyyy"
+          datePlaceholder="{{ self.dateFormat.toUpperCase() }}"
+          iconBefore="bold/interface-calendar"
+          label="To be delivered by:"
+          labelPosition="top"
+          minuteStep={15}
+          required={true}
+          value="{{ new Date(new Date().setDate(new Date().getDate() + 1)) }}"
+        />
+        <TextInput
+          id="textInput6"
+          label="Include media link here, if existing"
+          labelPosition="top"
+          placeholder="Paste link here"
+        />
       </Body>
       <Footer>
         <Button
@@ -142,6 +136,27 @@
           text="Submit"
         />
       </Footer>
+      <Event
+        event="submit"
+        method="trigger"
+        params={{
+          ordered: [
+            {
+              options: {
+                object: {
+                  onSuccess: null,
+                  onFailure: null,
+                  additionalScope: null,
+                },
+              },
+            },
+          ],
+        }}
+        pluginId="orderNew"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
     </Form>
   </Body>
 </ModalFrame>
