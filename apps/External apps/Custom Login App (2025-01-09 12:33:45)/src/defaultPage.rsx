@@ -10,7 +10,7 @@
     id="sampleQuery"
     notificationDuration={4.5}
     resourceDisplayName="retool_db"
-    resourceName="b164e4a6-c5ab-49d6-b483-84ba9dcd7f3e"
+    resourceName="2d377f5e-704c-4f5b-867d-6ab970d07267"
     showSuccessToaster={false}
     showUpdateSetValueDynamicallyToggle={false}
     updateSetValueDynamically={true}
@@ -55,7 +55,6 @@ return data"
       '{"email":false,"defaultGroupIds":false,"metadata":false}'
     }
     requestBodyMetadata=""
-    resourceDisplayName="Retool API"
     resourceName="92a78c07-061f-4efa-8702-6996960470f7"
     resourceTypeOverride=""
     server="default_server_url"

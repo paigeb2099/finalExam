@@ -210,7 +210,6 @@
     "type": "stack",
     "container": "group1",
     "subcontainer": "52b62",
-    "row": 0,
     "col": 8,
     "height": 0.6,
     "width": 4,
@@ -284,7 +283,6 @@
     "type": "stack",
     "container": "group1",
     "subcontainer": "52b62",
-    "row": 0,
     "height": 0.6,
     "width": 7,
     "stackPosition": {
