@@ -1,0 +1,20 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "9cdd24b0-cf72-11ef-9032-1fb77efac257",
+  "appTemplate": {
+    "appThemeId": 131528,
+    "pageCodeFolders": {
+      "object": {
+        "defaultPage": {
+          "array": []
+        }
+      }
+    },
+    "rootScreen": "defaultPage",
+    "appThemeName": "hulunet",
+    "shortlink": "hulunetlogin",
+    "version": "3.135.0",
+    "experimentalDataTabEnabled": true
+  }
+}
