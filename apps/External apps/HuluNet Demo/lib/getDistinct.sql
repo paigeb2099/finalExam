@@ -1,0 +1,1 @@
+SELECT DISTINCT type from hulunet_assets; SELECT DISTINCT language from hulunet_assets; SELECT DISTINCT country from hulunet_assets; 
