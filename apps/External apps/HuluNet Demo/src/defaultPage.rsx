@@ -182,6 +182,13 @@
     warningCodes={[]}
   />
   <State id="variable1" value="{{ groupSelector.value }}" />
+  <connectResource id="query17" _componentId={null} />
+  <JavascriptQuery
+    id="query18"
+    notificationDuration={4.5}
+    resourceName="JavascriptQuery"
+    showSuccessToaster={false}
+  />
   <Include src="./drawerFrame1.rsx" />
   <Include src="./modalFrame1.rsx" />
   <Include src="./modalFrame2.rsx" />
@@ -196,5 +203,162 @@
   >
     <Include src="./assetView.rsx" />
     <Include src="./container2.rsx" />
+    <Table
+      id="table2"
+      cellSelection="none"
+      clearChangesetOnSave={true}
+      data="{{ assetPaginationIncluded.data }}"
+      defaultSelectedRow={{ mode: "index", indexType: "display", index: 0 }}
+      emptyMessage="No rows found"
+      enableSaveActions={true}
+      primaryKeyColumnId="146e7"
+      showBorder={true}
+      showFooter={true}
+      showHeader={true}
+      toolbarPosition="bottom"
+    >
+      <Column
+        id="146e7"
+        alignment="right"
+        editableOptions={{ showStepper: true }}
+        format="decimal"
+        formatOptions={{ showSeparators: true, notation: "standard" }}
+        groupAggregationMode="sum"
+        key="id"
+        label="ID"
+        placeholder="Enter value"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
+        id="404d5"
+        alignment="left"
+        format="tag"
+        formatOptions={{ automaticColors: true }}
+        groupAggregationMode="none"
+        key="type"
+        label="Type"
+        placeholder="Select option"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+        valueOverride="{{ _.startCase(item) }}"
+      />
+      <Column
+        id="be8cd"
+        alignment="left"
+        format="string"
+        groupAggregationMode="none"
+        key="name"
+        label="Name"
+        placeholder="Enter value"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
+        id="f431a"
+        alignment="left"
+        format="link"
+        formatOptions={{ showUnderline: "hover" }}
+        groupAggregationMode="none"
+        key="media"
+        label="Media"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
+        id="5f307"
+        alignment="left"
+        format="string"
+        groupAggregationMode="none"
+        key="description"
+        label="Description"
+        placeholder="Enter value"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
+        id="1102b"
+        alignment="left"
+        format="tag"
+        formatOptions={{ automaticColors: true }}
+        groupAggregationMode="none"
+        key="language"
+        label="Language"
+        placeholder="Select option"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+        valueOverride="{{ _.startCase(item) }}"
+      />
+      <Column
+        id="d0ff2"
+        alignment="left"
+        format="tag"
+        formatOptions={{ automaticColors: true }}
+        groupAggregationMode="none"
+        key="country"
+        label="Country"
+        placeholder="Select option"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+        valueOverride="{{ _.startCase(item) }}"
+      />
+      <Column
+        id="33e97"
+        alignment="right"
+        editableOptions={{ showStepper: true }}
+        format="decimal"
+        formatOptions={{ showSeparators: true, notation: "standard" }}
+        groupAggregationMode="sum"
+        key="spend"
+        label="Spend"
+        placeholder="Enter value"
+        position="center"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <ToolbarButton
+        id="1a"
+        icon="bold/interface-text-formatting-filter-2"
+        label="Filter"
+        type="filter"
+      />
+      <ToolbarButton
+        id="3c"
+        icon="bold/interface-download-button-2"
+        label="Download"
+        type="custom"
+      >
+        <Event
+          event="clickToolbar"
+          method="exportData"
+          pluginId="table2"
+          type="widget"
+          waitMs="0"
+          waitType="debounce"
+        />
+      </ToolbarButton>
+      <ToolbarButton
+        id="4d"
+        icon="bold/interface-arrows-round-left"
+        label="Refresh"
+        type="custom"
+      >
+        <Event
+          event="clickToolbar"
+          method="refresh"
+          pluginId="table2"
+          type="widget"
+          waitMs="0"
+          waitType="debounce"
+        />
+      </ToolbarButton>
+    </Table>
   </Frame>
 </Screen>
