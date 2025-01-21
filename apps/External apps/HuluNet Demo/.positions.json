@@ -474,6 +474,12 @@
       }
     }
   },
+  "table2": {
+    "row": 18,
+    "col": 1,
+    "height": 8,
+    "width": 8
+  },
   "tabs1": {
     "type": "stack",
     "container": "tabbedContainer1",
