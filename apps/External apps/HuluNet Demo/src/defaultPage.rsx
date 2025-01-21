@@ -181,6 +181,7 @@
     updateSetValueDynamically={true}
     warningCodes={[]}
   />
+  <State id="variable1" value="{{ groupSelector.value }}" />
   <Include src="./drawerFrame1.rsx" />
   <Include src="./modalFrame1.rsx" />
   <Include src="./modalFrame2.rsx" />
@@ -193,7 +194,7 @@
     sticky={null}
     type="main"
   >
-    <Include src="./container2.rsx" />
     <Include src="./assetView.rsx" />
+    <Include src="./container2.rsx" />
   </Frame>
 </Screen>

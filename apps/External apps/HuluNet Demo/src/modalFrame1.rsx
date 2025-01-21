@@ -50,17 +50,17 @@
       </Header>
       <Body>
         <TextInput
-          id="textInput5"
-          label="Reason for Order:"
-          labelPosition="top"
-          placeholder="Marketing, project materials, etc."
-          required={true}
-        />
-        <TextInput
           id="textInput3"
           label="Asset Name:"
           labelPosition="top"
           placeholder="Enter New Asset Name"
+          required={true}
+        />
+        <TextInput
+          id="textInput5"
+          label="Reason for Order:"
+          labelPosition="top"
+          placeholder="Marketing, project materials, etc."
           required={true}
         />
         <Select

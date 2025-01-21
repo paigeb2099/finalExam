@@ -8,23 +8,23 @@
   showHeader={true}
 >
   <Header>
-    <Button id="button4" iconBefore="bold/computer-robot" text="Help">
-      <Event
-        event="click"
-        method="show"
-        params={{ ordered: [] }}
-        pluginId="drawerFrame1"
-        type="widget"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </Button>
     <Button id="button2" text="Order New Asset">
       <Event
         event="click"
         method="show"
         params={{ ordered: [] }}
         pluginId="modalFrame1"
+        type="widget"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
+    <Button id="button4" iconBefore="bold/computer-robot" text="Help">
+      <Event
+        event="click"
+        method="show"
+        params={{ ordered: [] }}
+        pluginId="drawerFrame1"
         type="widget"
         waitMs="0"
         waitType="debounce"

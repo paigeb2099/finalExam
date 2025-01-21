@@ -33,9 +33,7 @@
     />
     <Option
       id="19347"
-      hidden={
-        '{{ current_user.groups.some(group => group.name === "publicity") }}'
-      }
+      hidden="{{ groupSelector.value === 'Publicity' }} "
       icon="bold/money-graph-bar-increase"
       iconPosition="left"
       itemType="page"
@@ -43,4 +41,18 @@
       screenTargetId="page1"
     />
   </Navigation>
+  <Select
+    id="groupSelector"
+    emptyMessage="No options"
+    itemMode="static"
+    label=""
+    labelPosition="top"
+    overlayMaxHeight={375}
+    placeholder="Select an option"
+    showSelectionIndicator={true}
+    value="Marketing"
+  >
+    <Option id="99fcc" value="Marketing" />
+    <Option id="e5c7e" value="Publicity" />
+  </Select>
 </Frame>

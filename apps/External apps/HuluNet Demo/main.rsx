@@ -1,7 +1,5 @@
 <App>
   <Include src="./functions.rsx" />
-  <Include src="./src/defaultPage.rsx" />
-  <Include src="./src/page1.rsx" />
   <CustomAppTheme
     id="$appTheme"
     _migrated={true}
@@ -40,5 +38,7 @@
     textLight="#ffffff"
     warning="#cd6f00"
   />
+  <Include src="./src/defaultPage.rsx" />
+  <Include src="./src/page1.rsx" />
   <Include src="./header.rsx" />
 </App>

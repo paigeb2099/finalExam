@@ -53,23 +53,23 @@
       </Header>
       <Body>
         <Text
-          id="text9"
-          value="**Country:** {{ table1.selectedRow.country }}"
-          verticalAlign="center"
-        />
-        <Text
           id="text7"
           value="**Asset Name:** {{ table1.selectedRow.name }}"
           verticalAlign="center"
         />
         <Text
-          id="text10"
-          value="**Language:** {{ table1.selectedRow.language }}"
+          id="text9"
+          value="**Country:** {{ table1.selectedRow.country }}"
           verticalAlign="center"
         />
         <Text
           id="text8"
           value="**Asset Type:** {{ table1.selectedRow.type }}"
+          verticalAlign="center"
+        />
+        <Text
+          id="text10"
+          value="**Language:** {{ table1.selectedRow.language }}"
           verticalAlign="center"
         />
         <Text
